@@ -23,7 +23,6 @@ export default function renamer(data) {
 
         // replace only if the name is not used dangerously, e.g. inside strings
         if ([...data.matchAll(new RegExp('(\'|"|`).*?' + match + '.*?(\'|"|`)', 'gim'))].length > 0) {
-            console.log(match, fancyName(match))
             output = output.replace(new RegExp(match, 'gim'), fancyName(match))
         }
     }
