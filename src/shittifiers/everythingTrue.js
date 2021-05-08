@@ -1,5 +1,5 @@
 export default function everythingTrue(data) {
-    // true will become !!true
+    // true will become !false
     // false will become !true
     return data
         .replace(/([^a-z|^0-9])(true)([^a-z|^0-9])/gi, '$1!false$3')
