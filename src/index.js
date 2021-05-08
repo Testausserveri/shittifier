@@ -13,7 +13,7 @@ if (!/^.*\.(js|ts|cjs)$/.test(inputFile)) throw 'Unsupported input file format';
 
 const outputFile = (() => {
     let split = inputFile.split('.');
-    split[split.length - 1] = 'shit.' + split[split.length - 1];
+    split[split.length - 1] = '💩.' + split[split.length - 1];
     return split.join('.');
 })();
 
