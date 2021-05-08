@@ -11,6 +11,7 @@ const loadShittifiers = async () => {
 
     return shittifiers;
 }
+
 export const shittify = (input) => {
     return new Promise(async (resolve, reject) => {
         const shittifiers = await loadShittifiers();
