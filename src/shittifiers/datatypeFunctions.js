@@ -7,5 +7,6 @@ export default function datatypeFunctions(data) {
         .replace(/false/g,'Boolean(false)')
         .replace(/(".+")/g, 'String($1)') // Strings
         .replace(/('.+')/g, 'String($1)')
+        .replace(/(`.+`)/g, 'String($1)')
         .replace(/(\d+)/g,'Number($1)'); // Numbers
 }
